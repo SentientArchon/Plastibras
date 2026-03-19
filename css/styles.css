@@ -988,35 +988,113 @@ details > div { background: var(--bg-0) !important; }
 }
 
 /* ─── RESPONSIVE ─── */
+
+/* Tablet */
 @media (max-width: 1100px) {
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .about-grid { gap: 44px; }
 }
+
+/* Mobile landscape / large phones */
 @media (max-width: 900px) {
+  html { scroll-padding-top: 80px; }
   .container { padding: 0 20px; }
-  .section { padding: 72px 0; }
+  .section { padding: 64px 0; }
+
+  /* Nav — shrink to compact bar */
+  .nav-inner { height: 70px; }
+  .nav-logo img, .nav-logo-img { height: 52px; }
   .nav-links, .nav-cta { display: none; }
   .nav-hamburger { display: flex; }
+
+  /* Page hero — account for 70px nav */
+  .page-hero { padding: 100px 0 56px; }
+
+  /* Hero */
   .hero-stats { grid-template-columns: 1fr 1fr; }
   .hero-stat:nth-child(3) { grid-column: span 2; }
+  .hero-actions { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .hero-actions .btn { width: 100%; text-align: center; justify-content: center; }
+
+  /* Layouts */
   .about-grid { grid-template-columns: 1fr; }
   .content-section { grid-template-columns: 1fr; gap: 36px; }
   .content-section.reverse { direction: ltr; }
   .stats-grid { grid-template-columns: 1fr 1fr; }
-  .why-grid { grid-template-columns: 1fr; }
+  .why-grid { grid-template-columns: 1fr 1fr; }
   .blog-grid { grid-template-columns: 1fr 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .gallery-grid { grid-template-columns: 1fr 1fr; }
   .gallery-item.tall { grid-row: auto; }
   .form-row { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 28px; }
-  .advantages-grid { grid-template-columns: 1fr; }
+  .advantages-grid { grid-template-columns: 1fr 1fr; }
+
+  /* Map section on localizacao */
+  .map-wrap iframe { height: 300px; }
+
+  /* CTA buttons */
+  .cta-actions { flex-direction: column; align-items: center; gap: 12px; }
+  .cta-actions .btn { width: 100%; max-width: 320px; justify-content: center; }
+  .cta-desc { font-size: 16px; }
 }
+
+/* Mobile portrait */
 @media (max-width: 600px) {
-  .hero-stats { grid-template-columns: 1fr; }
+  html { scroll-padding-top: 70px; }
+  .container { padding: 0 16px; }
+  .section { padding: 52px 0; }
+
+  /* Nav */
+  .nav-inner { height: 64px; }
+  .nav-logo img, .nav-logo-img { height: 44px; }
+
+  /* Page hero */
+  .page-hero { padding: 86px 0 44px; }
+
+  /* Hero text */
+  .hero-badge { font-size: 11px; padding: 7px 14px; }
+  .hero-subtitle { font-size: 15px; }
+  .hero-stats { grid-template-columns: 1fr; gap: 12px; }
   .hero-stat:nth-child(3) { grid-column: auto; }
+  .hero-stat-number { font-size: 28px; }
+  .scroll-indicator { display: none; }
+
+  /* Grids → single column */
+  .why-grid { grid-template-columns: 1fr; }
   .blog-grid { grid-template-columns: 1fr; }
   .gallery-grid { grid-template-columns: 1fr; }
+  .advantages-grid { grid-template-columns: 1fr; }
   .stats-grid { grid-template-columns: 1fr 1fr; }
+
+  /* Section titles */
+  .section-title { font-size: clamp(22px, 6vw, 34px); }
+  .section-desc { font-size: 15px; }
+
+  /* Cards */
+  .service-card { padding: 24px 20px; }
+  .why-item { padding: 20px; }
+
+  /* Stats band numbers */
+  .stat-number { font-size: 36px; }
+
+  /* Table */
   .table-scroll-hint { display: block; }
+
+  /* CTA */
+  .cta-title { font-size: clamp(24px, 7vw, 40px); }
+  .cta-desc { font-size: 15px; }
+
+  /* Forms */
+  .contact-form { padding: 24px 20px; }
+
+  /* Blog featured card stacks */
+  .blog-featured { grid-template-columns: 1fr; }
+  .blog-featured-img { height: 220px; }
+
+  /* Map */
+  .map-wrap iframe { height: 260px; }
+
+  /* Footer */
+  .footer { padding: 48px 0 24px; }
 }
