@@ -57,7 +57,7 @@
 
 /* ─── RESET ─── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; font-size: 16px; scroll-padding-top: 264px; }
+html { scroll-behavior: smooth; font-size: 16px; scroll-padding-top: 80px; }
 body {
   font-family: var(--font-body);
   background: var(--bg-0);
@@ -147,20 +147,25 @@ input, textarea, select { font-family: var(--font-body); }
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--card-border);
   box-shadow: 0 1px 12px rgba(30,58,122,0.06);
+  overflow: visible;
 }
 .nav-inner {
   display: flex; align-items: center;
   justify-content: space-between; gap: 20px;
-  height: 264px;
+  height: 80px;
+  overflow: visible;
 }
 .nav-logo {
-  display: flex; align-items: center; gap: 0;
+  display: flex; align-items: flex-start;
   flex-shrink: 0;
+  position: relative;
+  z-index: 2;
 }
 .nav-logo img, .nav-logo-img {
   height: 256px; width: auto;
   object-fit: contain;
   display: block;
+  filter: drop-shadow(0 4px 16px rgba(30,58,122,0.12));
 }
 .nav-links {
   display: flex; align-items: center; gap: 2px;
@@ -623,7 +628,7 @@ input, textarea, select { font-family: var(--font-body); }
 
 /* ─── PAGE HERO (inner pages) ─── */
 .page-hero {
-  position: relative; padding: 150px 0 72px;
+  position: relative; padding: 112px 0 72px;
   overflow: hidden; border-bottom: 1px solid var(--card-border);
   background: linear-gradient(160deg, #EBF0F8 0%, #F5F7FA 100%);
 }
