@@ -57,7 +57,7 @@
 
 /* ─── RESET ─── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; font-size: 16px; scroll-padding-top: 136px; }
+html { scroll-behavior: smooth; font-size: 16px; scroll-padding-top: 264px; }
 body {
   font-family: var(--font-body);
   background: var(--bg-0);
@@ -151,14 +151,14 @@ input, textarea, select { font-family: var(--font-body); }
 .nav-inner {
   display: flex; align-items: center;
   justify-content: space-between; gap: 20px;
-  height: 136px;
+  height: 264px;
 }
 .nav-logo {
   display: flex; align-items: center; gap: 0;
   flex-shrink: 0;
 }
 .nav-logo img, .nav-logo-img {
-  height: 128px; width: auto;
+  height: 256px; width: auto;
   object-fit: contain;
   display: block;
 }
