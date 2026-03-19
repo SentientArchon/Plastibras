@@ -200,8 +200,9 @@ input, textarea, select { font-family: var(--font-body); }
 .nav-dropdown { position: relative; }
 .nav-dropdown-menu {
   position: absolute;
-  top: calc(100% + 8px); left: 50%;
+  top: 100%; left: 50%;
   transform: translateX(-50%);
+  padding-top: 8px;
   background: var(--card);
   border: 1px solid var(--card-border);
   border-radius: var(--radius-md);
