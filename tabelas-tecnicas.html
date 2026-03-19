@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tabela técnica para injeção de plásticos – Plastibras. Propriedades dos principais termoplásticos: temperatura, pressão, retração, densidade e mais.">
+  <title>Tabelas Técnicas – Plastibras</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .table-section { padding: 80px 0; }
+    .table-note { font-size: 12px; color: var(--text-3); margin-top: 16px; line-height: 1.6; }
+    .table-print-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 10px 20px; border-radius: var(--radius-sm);
+      background: var(--bg-2); border: 1px solid var(--card-border);
+      color: var(--text-2); font-size: 13px; font-weight: 600;
+      cursor: pointer; transition: var(--transition-fast); font-family: var(--font-body);
+    }
+    .table-print-btn:hover { border-color: var(--accent-cyan); color: var(--accent-cyan); }
+    @media print {
+      .nav, .footer, .float-whatsapp, .cursor-dot, .cursor-ring, .noise-overlay, #page-loader, .page-hero, .section-cta, .table-print-btn { display: none !important; }
+      body { background: white; color: #000; }
+      .tech-table th { background: #f0f0f0; color: #333; }
+      .tech-table td { color: #333; border-color: #ddd; }
+      .section-title { color: #000; }
+    }
+  </style>
+</head>
+<body>
+<div id="page-loader"><div class="loader-logo">PLASTI<span>BRAS</span></div><div class="loader-bar-wrap"><div class="loader-bar"></div></div></div>
+<div class="cursor-dot"></div><div class="cursor-ring"></div>
+<div class="noise-overlay" aria-hidden="true"></div>
+<div id="nav-placeholder"></div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-orb" aria-hidden="true"></div>
+  <canvas id="hero-canvas" class="grid-canvas" style="position:absolute;inset:0;z-index:0"></canvas>
+  <div class="container page-hero-content">
+    <div class="page-hero-breadcrumb">
+      <a href="index.html">Início</a><span class="sep">›</span>
+      <span>Tabelas Técnicas</span>
+    </div>
+    <div class="section-tag">Dados Técnicos</div>
+    <h1 class="page-hero-title">Tabela Técnica para <span style="color:var(--accent-cyan)">Injeção de Plásticos</span></h1>
+    <p class="page-hero-desc">Propriedades de processamento dos principais termoplásticos utilizados em nossos serviços. Dados de referência para projetos de injeção plástica e vacuum forming.</p>
+  </div>
+</section>
+
+<!-- TABLE -->
+<section class="table-section">
+  <div class="container">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:32px" class="reveal">
+      <div>
+        <div class="section-tag">Propriedades dos Termoplásticos</div>
+        <h2 class="section-title" style="margin-bottom:8px">Tabela de <span class="highlight">referência técnica</span></h2>
+        <p style="font-size:14px;color:var(--text-2)">Utilizada internamente em nossos processos e disponibilizada para auxiliar clientes e projetistas.</p>
+      </div>
+      <button class="table-print-btn" onclick="window.print()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        Imprimir / Exportar
+      </button>
+    </div>
+
+    <p class="table-scroll-hint">← Deslize para ver a tabela completa →</p>
+    <div class="table-wrap reveal" style="border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--card-border)">
+      <div class="table-scroll-wrap">
+        <table class="tech-table">
+          <thead>
+            <tr>
+              <th>Material</th>
+              <th>Temp. Fusão (°C)</th>
+              <th>Temp. Molde (°C)</th>
+              <th>Pressão Injeção (MPa)</th>
+              <th>Retração (%)</th>
+              <th>Resfriamento (s)</th>
+              <th>HDT (°C)</th>
+              <th>Densidade (g/cm³)</th>
+              <th>Absorção Água (%)</th>
+              <th>Aplicações Típicas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="mat-name">Polipropileno</span><span class="mat-abbr">PP</span></td>
+              <td>200 – 280</td>
+              <td>20 – 80</td>
+              <td>70 – 140</td>
+              <td>1,0 – 2,5</td>
+              <td>15 – 30</td>
+              <td>60 – 100</td>
+              <td>0,90 – 0,91</td>
+              <td>&lt; 0,03</td>
+              <td>Embalagens, peças automotivas, uso doméstico</td>
+            </tr>
+            <tr>
+              <td><span class="mat-name">Polietileno Alta Densidade</span><span class="mat-abbr">PE-AD / HDPE</span></td>
+              <td>180 – 260</td>
+              <td>30 – 60</td>
+              <td>70 – 105</td>
+              <td>1,5 – 4,0</td>
+              <td>20 – 40</td>
+              <td>60 – 80</td>
+              <td>0,94 – 0,97</td>
+              <td>&lt; 0,01</td>
+              <td>Tambores, caixas, tampas, componentes industriais</td>
+            </tr>
+            <tr>
+              <td><span class="mat-name">Polietileno Baixa Densidade</span><span class="mat-abbr">PE-BD / LDPE</span></td>
+              <td>160 – 240</td>
+              <td>20 – 50</td>
+              <td>50 – 100</td>
+              <td>1,5 – 5,0</td>
+              <td>15 – 35</td>
+              <td>40 – 50</td>
+              <td>0,91 – 0,94</td>
+              <td>&lt; 0,01</td>
+              <td>Embalagens flexíveis, brinquedos, garrafas</td>
+            </tr>
+            <tr>
+              <td><span class="mat-name">PVC Rígido</span><span class="mat-abbr">PVC-R</span></td>
+              <td>170 – 200</td>
+              <td>30 – 50</td>
+              <td>100 – 200</td>
+              <td>0,2 – 0,6</td>
+              <td>20 – 40</td>
+              <td>65 – 80</td>
+              <td>1,35 – 1,45</td>
+              <td>0,04 – 0,40</td>
+              <td>Tubos, conexões, perfis, componentes elétricos</td>
+            </tr>
+            <tr>
+              <td><span class="mat-name">PVC Flexível</span><span class="mat-abbr">PVC-F</span></td>
+              <td>150 – 180</td>
+              <td>20 – 40</td>
+              <td>70 – 140</td>
+              <td>1,0 – 3,5</td>
+              <td>15 – 30</td>
+              <td>50 – 65</td>
+              <td>1,20 – 1,35</td>
+              <td>0,04 – 0,40</td>
+              <td>Solados, cabos elétricos, mangueiras, brinquedos</td>
+            </tr>
+            <tr>
+              <td><span class="mat-name">Poliestireno</span><span class="mat-abbr">PS</span></td>
+              <td>180 – 280</td>
+              <td>20 – 60</td>
+              <td>70 – 150</td>
+              <td>0,4 – 0,7</td>
+              <td>10 – 25</td>
+              <td>70 – 95</td>
+              <td>1,04 – 1,06</td>
+              <td>0,03 – 0,10</td>
+              <td>Embalagens descartáveis, eletrodomésticos, displays</td>
+            </tr>
+            <tr>
+              <td><span class="mat-name">Acrilonitrila-Butadieno-Estireno</span><span class="mat-abbr">ABS</span></td>
+              <td>200 – 260</td>
+              <td>40 – 80</td>
+              <td>70 – 150</td>
+              <td>0,4 – 0,9</td>
+              <td>15 – 30</td>
+              <td>80 – 100</td>
+              <td>1,03 – 1,06</td>
+              <td>0,10 – 0,40</td>
+              <td>Eletroeletrônicos, painéis automotivos, brinquedos</td>
+            </tr>
+            <tr>
+              <td><span class="mat-name">Poliamida 6</span><span class="mat-abbr">PA 6 (Nylon 6)</span></td>
+              <td>230 – 280</td>
+              <td>40 – 80</td>
+              <td>70 – 150</td>
+              <td>0,6 – 1,5</td>
+              <td>20 – 40</td>
+              <td>65 – 80</td>
+              <td>1,12 – 1,14</td>
+              <td>2,5 – 3,5</td>
+              <td>Engrenagens, buchas, peças automotivas estruturais</td>
+            </tr>
+            <tr>
+              <td><span class="mat-name">Poliamida 6.6</span><span class="mat-abbr">PA 6.6 (Nylon 6.6)</span></td>
+              <td>260 – 300</td>
+              <td>60 – 90</td>
+              <td>100 – 180</td>
+              <td>0,5 – 1,5</td>
+              <td>20 – 45</td>
+              <td>90 – 110</td>
+              <td>1,13 – 1,16</td>
+              <td>2,0 – 3,0</td>
+              <td>Componentes de alta resistência, automotivo tier-1</td>
+            </tr>
+            <tr>
+              <td><span class="mat-name">Poliacetal</span><span class="mat-abbr">POM (Acetal)</span></td>
+              <td>190 – 230</td>
+              <td>60 – 100</td>
+              <td>100 – 180</td>
+              <td>1,5 – 2,5</td>
+              <td>20 – 40</td>
+              <td>100 – 125</td>
+              <td>1,41 – 1,43</td>
+              <td>0,20 – 0,25</td>
+              <td>Peças de precisão, engrenagens, rolamentos, válvulas</td>
+            </tr>
+            <tr>
+              <td><span class="mat-name">Policarbonato</span><span class="mat-abbr">PC</span></td>
+              <td>260 – 320</td>
+              <td>80 – 120</td>
+              <td>100 – 200</td>
+              <td>0,5 – 0,8</td>
+              <td>25 – 50</td>
+              <td>130 – 145</td>
+              <td>1,20 – 1,22</td>
+              <td>0,10 – 0,20</td>
+              <td>Lentes, faróis, componentes óticos, eletrônicos</td>
+            </tr>
+            <tr>
+              <td><span class="mat-name">Polimetilmetacrilato</span><span class="mat-abbr">PMMA (Acrílico)</span></td>
+              <td>210 – 260</td>
+              <td>40 – 70</td>
+              <td>100 – 180</td>
+              <td>0,3 – 0,8</td>
+              <td>20 – 40</td>
+              <td>85 – 105</td>
+              <td>1,17 – 1,20</td>
+              <td>0,30 – 0,40</td>
+              <td>Sinalização, lanternas, displays, peças decorativas</td>
+            </tr>
+            <tr>
+              <td><span class="mat-name">Politereftalato de Etileno</span><span class="mat-abbr">PET</span></td>
+              <td>270 – 290</td>
+              <td>10 – 30</td>
+              <td>120 – 200</td>
+              <td>0,2 – 0,5</td>
+              <td>25 – 50</td>
+              <td>70 – 80</td>
+              <td>1,33 – 1,40</td>
+              <td>0,16</td>
+              <td>Embalagens para alimentos, pré-formas de garrafas</td>
+            </tr>
+            <tr>
+              <td><span class="mat-name">Politereftalato de Butileno</span><span class="mat-abbr">PBT</span></td>
+              <td>240 – 275</td>
+              <td>40 – 80</td>
+              <td>100 – 180</td>
+              <td>0,5 – 2,2</td>
+              <td>20 – 40</td>
+              <td>120 – 155</td>
+              <td>1,30 – 1,35</td>
+              <td>0,08 – 0,10</td>
+              <td>Conectores elétricos, componentes automotivos técnicos</td>
+            </tr>
+            <tr>
+              <td><span class="mat-name">Estireno-Acrilonitrila</span><span class="mat-abbr">SAN</span></td>
+              <td>200 – 270</td>
+              <td>40 – 70</td>
+              <td>70 – 150</td>
+              <td>0,4 – 0,7</td>
+              <td>15 – 30</td>
+              <td>85 – 100</td>
+              <td>1,07 – 1,08</td>
+              <td>0,20 – 0,30</td>
+              <td>Produtos domésticos, eletrodomésticos, embalagens rígidas</td>
+            </tr>
+            <tr>
+              <td><span class="mat-name">Poliuretano Termoplástico</span><span class="mat-abbr">TPU</span></td>
+              <td>190 – 230</td>
+              <td>20 – 60</td>
+              <td>50 – 140</td>
+              <td>0,5 – 2,0</td>
+              <td>15 – 35</td>
+              <td>60 – 90</td>
+              <td>1,10 – 1,25</td>
+              <td>0,50 – 0,80</td>
+              <td>Solados, rolamentos, peças com amortecimento</td>
+            </tr>
+            <tr>
+              <td><span class="mat-name">Polisulfona</span><span class="mat-abbr">PSU</span></td>
+              <td>320 – 380</td>
+              <td>100 – 160</td>
+              <td>120 – 200</td>
+              <td>0,5 – 0,7</td>
+              <td>30 – 60</td>
+              <td>170 – 185</td>
+              <td>1,24</td>
+              <td>0,22 – 0,30</td>
+              <td>Equipamentos médicos, aeroespacial, química</td>
+            </tr>
+            <tr>
+              <td><span class="mat-name">Polietileno Termoplástico Elastômero</span><span class="mat-abbr">TPE / SEBS</span></td>
+              <td>170 – 220</td>
+              <td>20 – 50</td>
+              <td>40 – 100</td>
+              <td>1,0 – 3,0</td>
+              <td>15 – 30</td>
+              <td>40 – 70</td>
+              <td>0,88 – 0,93</td>
+              <td>&lt; 0,10</td>
+              <td>Pegas, componentes macios, overmolding</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p class="table-note reveal">
+      <strong>Nota:</strong> Os valores apresentados são referências gerais de processamento e podem variar conforme o fornecedor, grau específico do material, aditivos e condições do equipamento.
+      Sempre consulte o datasheet técnico do fabricante do material para parametrização final.
+      <strong>HDT</strong> = Temperatura de Deflexão ao Calor (Heat Deflection Temperature) medida a 1,82 MPa conforme ISO 75-1/2.
+      A Plastibras não se responsabiliza pelo uso das informações desta tabela para fins de projeto sem validação técnica adequada.
+    </p>
+  </div>
+</section>
+
+<!-- LEGEND -->
+<section class="section--sm bg-1">
+  <div class="container reveal">
+    <div class="section-tag">Legenda das Colunas</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:24px">
+      <div class="advantage-item"><div class="advantage-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><div class="advantage-title">Temp. Fusão (°C)</div><div class="advantage-text">Faixa de temperatura do barril da injetora para fundir o material corretamente.</div></div></div>
+      <div class="advantage-item"><div class="advantage-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><div class="advantage-title">Temp. Molde (°C)</div><div class="advantage-text">Temperatura do molde para garantir acabamento e controle dimensional.</div></div></div>
+      <div class="advantage-item"><div class="advantage-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><div class="advantage-title">Pressão de Injeção (MPa)</div><div class="advantage-text">Pressão hidráulica aplicada para preencher o molde sem defeitos.</div></div></div>
+      <div class="advantage-item"><div class="advantage-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><div class="advantage-title">Retração (%)</div><div class="advantage-text">Percentual de contração dimensional após extração e resfriamento até temperatura ambiente.</div></div></div>
+      <div class="advantage-item"><div class="advantage-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><div class="advantage-title">HDT (°C)</div><div class="advantage-text">Temperatura de Deflexão ao Calor – limite térmico estrutural da peça em serviço.</div></div></div>
+      <div class="advantage-item"><div class="advantage-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><div class="advantage-title">Absorção de Água (%)</div><div class="advantage-text">Higroscopicidade do material – impacta na necessidade de secagem pré-processamento.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta-section">
+  <div class="cta-bg"><div class="cta-bg-gradient"></div></div>
+  <div class="container">
+    <div class="cta-inner reveal" style="text-align:center">
+      <div class="section-tag" style="justify-content:center">Precisa de Suporte Técnico?</div>
+      <h2 class="cta-title">Dúvidas sobre <span class="highlight">materiais ou processos?</span></h2>
+      <p class="cta-desc">Nossa equipe técnica está pronta para auxiliar na seleção do material e processo mais adequado para o seu projeto.</p>
+      <div class="cta-actions">
+        <a href="contato.html" class="btn btn-primary btn-lg">Fale com um Especialista <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        <a href="https://wa.me/5547997690917" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg> WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+<script>
+// Make table scroll hint visible on mobile
+document.addEventListener('DOMContentLoaded', function() {
+  const wrap = document.querySelector('.table-scroll-wrap');
+  const hint = document.querySelector('.table-scroll-hint');
+  if (wrap && hint && wrap.scrollWidth > wrap.clientWidth) {
+    hint.style.display = 'block';
+  }
+});
+</script>
+</body>
+</html>

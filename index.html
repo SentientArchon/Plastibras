@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plastibras Indústria de Plásticos – Mais de 30 anos em injeção de plásticos, vacuum forming e ferramentaria em Joinville, SC. ISO 9001.">
+  <title>Plastibras – Indústria de Plásticos | Joinville, SC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ░░ LOADER ░░ -->
+<div id="page-loader">
+  <div class="loader-logo">PLASTI<span>BRAS</span></div>
+  <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+</div>
+
+<!-- ░░ CURSOR ░░ -->
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<!-- ░░ NOISE ░░ -->
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<!-- ░░ NAV ░░ -->
+<nav class="nav" role="navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo-transparent.png" alt="Plastibras" class="nav-logo-img">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Início</a></li>
+        <li><a href="empresa.html" class="nav-link">A Empresa</a></li>
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link">Serviços ▾</a>
+          <div class="nav-dropdown-menu">
+            <a href="injecao.html" class="nav-dropdown-item"><span class="dot"></span>Injeção de Plásticos</a>
+            <a href="vacuum-forming.html" class="nav-dropdown-item"><span class="dot"></span>Vacuum Forming</a>
+            <a href="ferramentaria.html" class="nav-dropdown-item"><span class="dot"></span>Ferramentaria</a>
+            <a href="impressao-3d.html" class="nav-dropdown-item"><span class="dot"></span>Impressão 3D</a>
+          </div>
+        </li>
+        <li><a href="tabelas-tecnicas.html" class="nav-link">Tabelas Técnicas</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="localizacao.html" class="nav-link">Localização</a></li>
+      </ul>
+      <a href="contato.html" class="nav-cta">Solicitar Orçamento</a>
+      <button class="nav-hamburger" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ░░ MOBILE MENU ░░ -->
+<div class="mobile-menu" role="dialog" aria-label="Menu de navegação">
+  <button class="mobile-close" aria-label="Fechar menu">✕</button>
+  <a href="index.html" class="mobile-menu-link">Início</a>
+  <a href="empresa.html" class="mobile-menu-link">A Empresa</a>
+  <a href="injecao.html" class="mobile-menu-link">Injeção de Plásticos</a>
+  <a href="vacuum-forming.html" class="mobile-menu-link">Vacuum Forming</a>
+  <a href="ferramentaria.html" class="mobile-menu-link">Ferramentaria</a>
+  <a href="impressao-3d.html" class="mobile-menu-link">Impressão 3D</a>
+  <a href="tabelas-tecnicas.html" class="mobile-menu-link">Tabelas Técnicas</a>
+  <a href="blog.html" class="mobile-menu-link">Blog</a>
+  <a href="contato.html" class="mobile-menu-link">Contato</a>
+  <a href="localizacao.html" class="mobile-menu-link">Localização</a>
+</div>
+
+<!-- ░░ HERO ░░ -->
+<section class="hero">
+  <div class="hero-bg">
+    <canvas id="hero-canvas" class="grid-canvas"></canvas>
+  </div>
+  <div class="container" style="position:relative;z-index:2;width:100%;">
+    <div class="hero-content">
+      <div class="hero-badge">Desde 1995 · Joinville, SC · ISO 9001</div>
+      <h1 class="hero-title">
+        <span class="line"><span class="word">Moldando</span> <span class="word">o</span> <span class="word">futuro</span></span>
+        <span class="line"><span class="word">do</span> <span class="word highlight">plástico</span></span>
+        <span class="line"><span class="word">brasileiro</span></span>
+      </h1>
+      <p class="hero-subtitle">
+        Mais de 30 anos de excelência em injeção de plásticos, vacuum forming e ferramentaria.
+        Qualidade ISO 9001, foco total no cliente e tecnologia de ponta em Joinville, Santa Catarina.
+      </p>
+      <div class="hero-actions">
+        <a href="contato.html" class="btn btn-primary btn-lg">
+          Solicitar Orçamento
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a href="empresa.html" class="btn btn-outline btn-lg">
+          Conheça a Empresa
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-number"><span data-counter data-target="30" data-suffix="+">0</span></div>
+          <div class="hero-stat-label">Anos de Experiência</div>
+        </div>
+        <div class="hero-stat">
+          <a href="documents/ISO9001.pdf" target="_blank" rel="noopener" title="Ver Certificado ISO 9001" style="text-decoration:none;color:inherit">
+            <div class="hero-stat-number"><span data-counter data-target="9001" data-prefix="ISO ">ISO 0</span></div>
+            <div class="hero-stat-label">Certificação de Qualidade <span style="font-size:11px;color:var(--green)">↗ ver cert.</span></div>
+          </a>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-number"><span data-counter data-target="4">0</span></div>
+          <div class="hero-stat-label">Serviços Especializados</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+    Scroll
+  </div>
+</section>
+
+<!-- ░░ SERVICES ░░ -->
+<section class="section" id="servicos">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-tag">Nossos Serviços</div>
+      <h2 class="section-title">Soluções completas em<br><span class="highlight">plásticos industriais</span></h2>
+      <p class="section-desc">
+        Da concepção ao produto final, oferecemos uma cadeia integrada de processos com qualidade
+        e tecnologia para os mais exigentes segmentos industriais.
+      </p>
+    </div>
+    <div class="services-grid">
+      <a href="injecao.html" class="service-card reveal" data-delay="1">
+        <div class="service-card-number">01 / Serviço</div>
+        <div class="service-card-icon blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <h3 class="service-card-title">Injeção de Plásticos</h3>
+        <p class="service-card-desc">
+          Alta precisão dimensional com diversificado parque de máquinas.
+          Processamos desde commodities até plásticos de engenharia para os mais variados setores.
+        </p>
+        <span class="service-card-link">
+          Saiba mais
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </span>
+        <span class="service-card-bg-number">01</span>
+      </a>
+      <a href="vacuum-forming.html" class="service-card reveal" data-delay="2">
+        <div class="service-card-number">02 / Serviço</div>
+        <div class="service-card-icon orange">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+        </div>
+        <h3 class="service-card-title">Vacuum Forming</h3>
+        <p class="service-card-desc">
+          Termoformagem técnica com moldes de baixo custo. Peças de grande formato,
+          embalagens blister e protótipos com qualidade e agilidade sem precedentes.
+        </p>
+        <span class="service-card-link">
+          Saiba mais
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </span>
+        <span class="service-card-bg-number">02</span>
+      </a>
+      <a href="ferramentaria.html" class="service-card reveal" data-delay="3">
+        <div class="service-card-number">03 / Serviço</div>
+        <div class="service-card-icon blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <h3 class="service-card-title">Ferramentaria</h3>
+        <p class="service-card-desc">
+          Setor próprio equipado para construção e manutenção de moldes e matrizes.
+          Atendemos dos mais variados segmentos industriais, inclusive automotivo.
+        </p>
+        <span class="service-card-link">
+          Saiba mais
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </span>
+        <span class="service-card-bg-number">03</span>
+      </a>
+      <a href="impressao-3d.html" class="service-card reveal" data-delay="4">
+        <div class="service-card-number">04 / Serviço</div>
+        <div class="service-card-icon orange">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></svg>
+        </div>
+        <h3 class="service-card-title">Impressão 3D</h3>
+        <p class="service-card-desc">
+          Protótipos e modelos físicos em polímeros com rapidez e precisão.
+          Valide seu produto antes do investimento em molde. Atendemos todo o Brasil.
+        </p>
+        <span class="service-card-link">
+          Saiba mais
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </span>
+        <span class="service-card-bg-number">04</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ STATS BAND ░░ -->
+<div class="stats-band">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-number blue" data-counter data-target="30" data-suffix="+">0+</div>
+        <div class="stat-label">Anos de Mercado</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number orange" data-counter data-target="100" data-suffix="%">0%</div>
+        <div class="stat-label">Foco no Cliente</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number blue">ISO<br style="line-height:0.5">9001</div>
+        <div class="stat-label">Certificação de Qualidade</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-counter data-target="1995">0</div>
+        <div class="stat-label">Ano de Fundação</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ░░ ABOUT ░░ -->
+<section class="section bg-1" id="sobre">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image-wrap reveal-left">
+        <div class="about-image-main">
+          <img src="images/parque-de-maquinas-plastibras-industria-plastica-joinville-sc.jpg"
+               alt="Parque de máquinas Plastibras – Injeção de plásticos Joinville SC"
+               loading="lazy">
+          <div class="content-image-overlay"></div>
+        </div>
+        <div class="about-image-accent">
+          <img src="images/plastibras-industria-de-plasticos-joinville-sc-_AEREA-300x263.jpg"
+               alt="Vista aérea Plastibras Joinville" loading="lazy">
+        </div>
+        <div class="about-badge">Est. 1995 · Joinville, SC</div>
+      </div>
+      <div class="reveal-right">
+        <div class="section-tag">A Empresa</div>
+        <h2 class="section-title">Tradição e inovação em <span class="highlight">plásticos</span></h2>
+        <p class="section-desc">
+          Fundada em 1995 por Daniela Krieger, a Plastibras nasceu com uma missão clara:
+          entregar peças plásticas com alta qualidade, priorizando o cliente em cada etapa do processo.
+        </p>
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="about-feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <div class="about-feature-title">Certificação ISO 9001</div>
+              <div class="about-feature-text">Sistema de gestão da qualidade reconhecido internacionalmente, garantindo processos padronizados e rastreáveis.</div>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+            <div>
+              <div class="about-feature-title">Controle Dimensional Total</div>
+              <div class="about-feature-text">Todas as peças passam por rigoroso controle dimensional antes de deixar nossa fábrica, garantindo zero retrabalho.</div>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div>
+              <div class="about-feature-title">Foco Total no Cliente</div>
+              <div class="about-feature-text">Cada cliente é tratado como parceiro estratégico. Sua satisfação é nossa principal motivação diária.</div>
+            </div>
+          </div>
+        </div>
+        <a href="empresa.html" class="btn btn-primary" style="margin-top:28px">
+          Nossa História
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ WHY US ░░ -->
+<section class="section" id="diferenciais">
+  <div class="container">
+    <div class="reveal" style="text-align:center; max-width:600px; margin:0 auto 0">
+      <div class="section-tag">Por Que Escolher a Plastibras</div>
+      <h2 class="section-title">Diferenciais que <span class="highlight">fazem a diferença</span></h2>
+    </div>
+    <div class="why-grid" style="margin-top:56px">
+      <div class="why-item reveal" data-delay="1">
+        <div class="why-item-number">01</div>
+        <div class="why-item-icon">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <div class="why-item-title">Ferramentaria Própria</div>
+        <div class="why-item-text">Nosso setor de ferramentaria elimina intermediários, garantindo agilidade na manutenção preventiva e na construção de novos moldes, reduzindo seu tempo de desenvolvimento.</div>
+      </div>
+      <div class="why-item reveal" data-delay="2">
+        <div class="why-item-number">02</div>
+        <div class="why-item-icon">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div class="why-item-title">Controle de Qualidade</div>
+        <div class="why-item-text">Controle dimensional rigoroso em 100% da produção. "Faça certo da primeira vez" não é apenas um slogan – é nossa filosofia operacional desde 1995.</div>
+      </div>
+      <div class="why-item reveal" data-delay="3">
+        <div class="why-item-number">03</div>
+        <div class="why-item-icon">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <div class="why-item-title">Parque de Máquinas Moderno</div>
+        <div class="why-item-text">Equipamentos de alta capacidade para atender grandes demandas. Máquinas injetoras com múltiplas capacidades de força para peças simples e complexas.</div>
+      </div>
+      <div class="why-item reveal" data-delay="1">
+        <div class="why-item-number">04</div>
+        <div class="why-item-icon">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/><circle cx="12" cy="12" r="4"/></svg>
+        </div>
+        <div class="why-item-title">Flexibilidade de Materiais</div>
+        <div class="why-item-text">Processamos desde commodities (PP, PE, PVC) até plásticos de engenharia avançados (PA, POM, PC), adaptando cada processo à especificação exigida.</div>
+      </div>
+      <div class="why-item reveal" data-delay="2">
+        <div class="why-item-number">05</div>
+        <div class="why-item-icon">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="why-item-title">Atendimento Automotivo</div>
+        <div class="why-item-text">Fornecedor qualificado para os mais exigentes clientes, incluindo o segmento automotivo, onde precisão e repetibilidade são absolutamente indispensáveis.</div>
+      </div>
+      <div class="why-item reveal" data-delay="3">
+        <div class="why-item-number">06</div>
+        <div class="why-item-icon">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div class="why-item-title">Localização Estratégica</div>
+        <div class="why-item-text">Em Joinville, SC, o polo industrial mais dinâmico do Sul do Brasil. Logística facilitada para Curitiba, São Paulo e todo o território nacional.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ GALLERY ░░ -->
+<section class="section bg-1">
+  <div class="container">
+    <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto">
+      <div class="section-tag">Nossa Fábrica</div>
+      <h2 class="section-title">Estrutura e <span class="highlight">tecnologia</span></h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item tall reveal" data-delay="1">
+        <img src="images/fabrica-de-produtos-de-plastico-injecao-termoformagem.jpg"
+             alt="Fábrica Plastibras – Injeção e Termoformagem" loading="lazy">
+        <div class="gallery-item-overlay"><span class="gallery-item-overlay-text">Fábrica – Joinville, SC</span></div>
+      </div>
+      <div class="gallery-item reveal" data-delay="2">
+        <img src="images/injecao_plasticos_plastibras-1-300x231.jpg"
+             alt="Injeção de plásticos Plastibras" loading="lazy">
+        <div class="gallery-item-overlay"><span class="gallery-item-overlay-text">Injeção de Plásticos</span></div>
+      </div>
+      <div class="gallery-item reveal" data-delay="3">
+        <img src="images/servico-ferramentaria-joinvile-plastibras-industria-de-plasticos.jpg"
+             alt="Ferramentaria Plastibras Joinville" loading="lazy">
+        <div class="gallery-item-overlay"><span class="gallery-item-overlay-text">Ferramentaria</span></div>
+      </div>
+      <div class="gallery-item reveal" data-delay="2">
+        <img src="images/peca-plastica-embalagem-blister-vacuum-forming-termoformagem-a-vacuo.jpg"
+             alt="Peça plástica – Vacuum Forming" loading="lazy">
+        <div class="gallery-item-overlay"><span class="gallery-item-overlay-text">Vacuum Forming</span></div>
+      </div>
+      <div class="gallery-item reveal" data-delay="3">
+        <img src="images/controle-dimensional-de-pecas-de-plastico-industria-plastica.jpg"
+             alt="Controle dimensional de peças plásticas" loading="lazy">
+        <div class="gallery-item-overlay"><span class="gallery-item-overlay-text">Controle de Qualidade</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ BLOG PREVIEW ░░ -->
+<section class="section">
+  <div class="container">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:20px;margin-bottom:0">
+      <div class="reveal">
+        <div class="section-tag">Blog do Plástico</div>
+        <h2 class="section-title">Conteúdo e <span class="highlight">conhecimento</span></h2>
+      </div>
+      <a href="blog.html" class="btn btn-outline reveal">Ver todos os artigos →</a>
+    </div>
+    <div class="blog-grid" style="margin-top:48px">
+      <a href="https://www.plastibras.com.br/industria-de-plasticos-em-joinville-por-que-a-certificacao-iso-9001-e-o-diferencial-que-seu-projeto-precisa/"
+         class="blog-card reveal" data-delay="1" target="_blank" rel="noopener">
+        <div class="blog-card-img">
+          <img src="images/industria-de-plastico-joinville-santa-catarina-plastibras-youtube-1024x576.jpg"
+               alt="Certificação ISO 9001 – Plastibras" loading="lazy">
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span class="blog-card-cat">Mercado</span>
+            <span class="blog-card-date">04/03/2026</span>
+          </div>
+          <h3 class="blog-card-title">Por que a Certificação ISO 9001 é o Diferencial que seu Projeto Precisa</h3>
+          <p class="blog-card-excerpt">Você já enfrentou problemas com lotes de peças plásticas que apresentavam variações dimensionais? Saiba como a ISO 9001 elimina esse risco.</p>
+          <span class="blog-card-link">Ler artigo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </div>
+      </a>
+      <a href="https://www.plastibras.com.br/artigo-tecnico-injecao-vs-vacuum-forming-no-setor-automotivo/"
+         class="blog-card reveal" data-delay="2" target="_blank" rel="noopener">
+        <div class="blog-card-img">
+          <img src="images/injecao-de-plasticos-especiais-pvc-polietileno-polipropileno-plastibras-joinville-300x225.jpg"
+               alt="Injeção vs Vacuum Forming automotivo" loading="lazy">
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span class="blog-card-cat">Técnico</span>
+            <span class="blog-card-date">04/03/2026</span>
+          </div>
+          <h3 class="blog-card-title">Artigo Técnico: Injeção vs Vacuum Forming no Setor Automotivo</h3>
+          <p class="blog-card-excerpt">No dinâmico mercado automotivo, a escolha do processo de fabricação de componentes plásticos impacta diretamente custo, prazo e qualidade.</p>
+          <span class="blog-card-link">Ler artigo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </div>
+      </a>
+      <a href="https://www.plastibras.com.br/termoplasticos-a-revolucao-sustentavel-na-industria-de-plasticos/"
+         class="blog-card reveal" data-delay="3" target="_blank" rel="noopener">
+        <div class="blog-card-img">
+          <img src="images/impressao-3d-joinville.jpg"
+               alt="Termoplásticos sustentáveis" loading="lazy">
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span class="blog-card-cat">Mercado</span>
+            <span class="blog-card-date">08/10/2024</span>
+          </div>
+          <h3 class="blog-card-title">Termoplásticos: A Revolução Sustentável na Indústria de Plásticos</h3>
+          <p class="blog-card-excerpt">A indústria de plásticos está em constante evolução, impulsionada por avanços tecnológicos e uma crescente preocupação com a sustentabilidade.</p>
+          <span class="blog-card-link">Ler artigo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ CTA ░░ -->
+<section class="section cta-section bg-1">
+  <div class="cta-bg"><div class="cta-bg-gradient"></div></div>
+  <div class="container">
+    <div class="cta-inner reveal" style="text-align:center">
+      <div class="section-tag" style="justify-content:center">Fale Conosco</div>
+      <h2 class="cta-title">Pronto para começar <span class="highlight">seu projeto?</span></h2>
+      <p class="cta-desc">Entre em contato agora e receba uma proposta personalizada para sua necessidade. Nossa equipe está pronta para atendê-lo.</p>
+      <div class="cta-actions">
+        <a href="contato.html" class="btn btn-primary btn-lg">
+          Solicitar Orçamento
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a href="https://wa.me/5547997690917?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
+           class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+      <div style="display:flex;justify-content:center">
+        <div class="cta-iso">
+          <span class="iso-badge">ISO 9001</span>
+          Empresa certificada · CNPJ 78.627.148/0001-48
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ FOOTER ░░ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">PLASTI<span>BRAS</span></div>
+        <p class="footer-tagline">
+          Mais de 30 anos moldando o futuro do plástico brasileiro.
+          Qualidade, precisão e parceria desde 1995 em Joinville, SC.
+        </p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/plastibras" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://www.facebook.com/plastibrasplasticos" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://twitter.com/plastibras" target="_blank" rel="noopener" class="social-link" aria-label="Twitter/X">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@plastibras" target="_blank" rel="noopener" class="social-link" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon fill="#060810" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Serviços</div>
+        <ul class="footer-links">
+          <li><a href="injecao.html" class="footer-link">Injeção de Plásticos</a></li>
+          <li><a href="vacuum-forming.html" class="footer-link">Vacuum Forming</a></li>
+          <li><a href="ferramentaria.html" class="footer-link">Ferramentaria</a></li>
+          <li><a href="impressao-3d.html" class="footer-link">Impressão 3D</a></li>
+          <li><a href="tabelas-tecnicas.html" class="footer-link">Tabelas Técnicas</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Empresa</div>
+        <ul class="footer-links">
+          <li><a href="empresa.html" class="footer-link">A Empresa</a></li>
+          <li><a href="blog.html" class="footer-link">Blog do Plástico</a></li>
+          <li><a href="contato.html" class="footer-link">Contato</a></li>
+          <li><a href="localizacao.html" class="footer-link">Localização</a></li>
+          <li><a href="#" class="footer-link">Privacidade e LGPD</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contato</div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span class="footer-contact-text">Rua Tenente Antônio João, 4000<br>Jardim Sofia · Joinville, SC<br>CEP 89223-100</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.79a16 16 0 0 0 6.29 6.29l1.85-1.85a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span class="footer-contact-text"><a href="tel:+554734730077">(47) 3473-0077</a></span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          <span class="footer-contact-text"><a href="https://wa.me/5547997690917" target="_blank" rel="noopener">(47) 99769-0917</a></span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span class="footer-contact-text"><a href="mailto:comercial@plastibras.com.br">comercial@plastibras.com.br</a></span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-left">
+        © 2026 Plastibras Indústria de Plásticos Ltda. · CNPJ 78.627.148/0001-48 · Todos os direitos reservados.
+      </div>
+      <div class="footer-bottom-right">
+        <a href="#" class="footer-bottom-link">Privacidade e LGPD</a>
+        <a href="contato.html" class="footer-bottom-link">Contato</a>
+        <a href="localizacao.html" class="footer-bottom-link">Localização</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ░░ FLOATING WHATSAPP ░░ -->
+<a href="https://wa.me/5547997690917?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento."
+   class="float-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp Plastibras">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>

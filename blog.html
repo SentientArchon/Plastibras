@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog do Plástico – Plastibras. Artigos técnicos e notícias sobre injeção de plásticos, vacuum forming, ferramentaria e o mercado de plásticos no Brasil.">
+  <title>Blog do Plástico – Plastibras</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="page-loader"><div class="loader-logo">PLASTI<span>BRAS</span></div><div class="loader-bar-wrap"><div class="loader-bar"></div></div></div>
+<div class="cursor-dot"></div><div class="cursor-ring"></div>
+<div class="noise-overlay" aria-hidden="true"></div>
+<div id="nav-placeholder"></div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-orb" aria-hidden="true"></div>
+  <canvas id="hero-canvas" class="grid-canvas" style="position:absolute;inset:0;z-index:0"></canvas>
+  <div class="container page-hero-content">
+    <div class="page-hero-breadcrumb">
+      <a href="index.html">Início</a><span class="sep">›</span>
+      <span>Blog do Plástico</span>
+    </div>
+    <div class="section-tag">Conhecimento e Inovação</div>
+    <h1 class="page-hero-title">Blog do <span style="color:var(--accent-cyan)">Plástico</span></h1>
+    <p class="page-hero-desc">Artigos técnicos, tendências de mercado e novidades sobre injeção de plásticos, vacuum forming e ferramentaria. Conteúdo especializado para profissionais da indústria plástica.</p>
+  </div>
+</section>
+
+<!-- BLOG POSTS -->
+<section class="section">
+  <div class="container">
+    <!-- Filters -->
+    <div class="blog-filters reveal">
+      <button class="blog-filter active" data-cat="all">Todos</button>
+      <button class="blog-filter" data-cat="mercado">Mercado</button>
+      <button class="blog-filter" data-cat="tecnico">Técnico</button>
+      <button class="blog-filter" data-cat="sustentabilidade">Sustentabilidade</button>
+    </div>
+
+    <!-- Featured Post -->
+    <div class="reveal" style="margin-bottom:40px">
+      <a href="https://www.plastibras.com.br/industria-de-plasticos-em-joinville-por-que-a-certificacao-iso-9001-e-o-diferencial-que-seu-projeto-precisa/" target="_blank" rel="noopener"
+         style="display:grid;grid-template-columns:1.2fr 1fr;gap:0;background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius-lg);overflow:hidden;transition:var(--transition)"
+         class="blog-featured-card" data-cat="mercado">
+        <div style="aspect-ratio:16/9;overflow:hidden;min-height:300px">
+          <img src="images/industria-de-plastico-joinville-santa-catarina-plastibras-youtube-1024x576.jpg"
+               alt="ISO 9001 Plastibras" loading="lazy"
+               style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease">
+        </div>
+        <div style="padding:48px 44px;display:flex;flex-direction:column;justify-content:center">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
+            <span class="blog-card-cat">Mercado</span>
+            <span class="blog-card-date">04/03/2026</span>
+            <span style="font-size:11px;background:var(--gradient-blue);color:#fff;padding:2px 10px;border-radius:99px;font-weight:600;font-family:var(--font-tech);letter-spacing:0.08em">DESTAQUE</span>
+          </div>
+          <h2 style="font-family:var(--font-display);font-size:26px;font-weight:800;color:var(--text-1);line-height:1.25;letter-spacing:-0.01em;margin-bottom:14px">Por que a Certificação ISO 9001 é o Diferencial que seu Projeto Precisa</h2>
+          <p style="font-size:14.5px;color:var(--text-2);line-height:1.65;margin-bottom:24px">Você já enfrentou problemas com lotes de peças plásticas que apresentavam variações dimensionais? Saiba como a ISO 9001 elimina esse risco e garante consistência absoluta em cada entrega.</p>
+          <span class="blog-card-link">Ler artigo completo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Grid -->
+    <div class="blog-grid" id="blog-grid">
+
+      <a href="https://www.plastibras.com.br/artigo-tecnico-injecao-vs-vacuum-forming-no-setor-automotivo/" target="_blank" rel="noopener" class="blog-card reveal" data-delay="1" data-cat="tecnico">
+        <div class="blog-card-img"><img src="images/injecao-de-plasticos-especiais-pvc-polietileno-polipropileno-plastibras-joinville-300x225.jpg" alt="" loading="lazy"></div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta"><span class="blog-card-cat">Técnico</span><span class="blog-card-date">04/03/2026</span></div>
+          <h3 class="blog-card-title">Artigo Técnico: Injeção vs Vacuum Forming no Setor Automotivo</h3>
+          <p class="blog-card-excerpt">A escolha do processo de fabricação de componentes plásticos impacta diretamente custo, prazo e qualidade no mercado automotivo.</p>
+          <span class="blog-card-link">Ler artigo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="https://www.plastibras.com.br/termoplasticos-a-revolucao-sustentavel-na-industria-de-plasticos/" target="_blank" rel="noopener" class="blog-card reveal" data-delay="2" data-cat="sustentabilidade">
+        <div class="blog-card-img"><img src="images/impressao-3d-joinville.jpg" alt="" loading="lazy"></div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta"><span class="blog-card-cat" style="background:rgba(255,90,31,0.1);color:var(--accent-orange);border:1px solid rgba(255,90,31,0.2)">Sustentabilidade</span><span class="blog-card-date">08/10/2024</span></div>
+          <h3 class="blog-card-title">Termoplásticos: A Revolução Sustentável na Indústria de Plásticos</h3>
+          <p class="blog-card-excerpt">A indústria de plásticos está em constante evolução, impulsionada por avanços tecnológicos e uma crescente preocupação com a sustentabilidade ambiental.</p>
+          <span class="blog-card-link">Ler artigo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="https://www.plastibras.com.br/plasticos-biodegradaveis/" target="_blank" rel="noopener" class="blog-card reveal" data-delay="3" data-cat="sustentabilidade">
+        <div class="blog-card-img" style="background:var(--bg-2)"><div class="blog-card-img-placeholder"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(0,180,216,0.3)" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div></div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta"><span class="blog-card-cat" style="background:rgba(255,90,31,0.1);color:var(--accent-orange);border:1px solid rgba(255,90,31,0.2)">Sustentabilidade</span><span class="blog-card-date">11/09/2025</span></div>
+          <h3 class="blog-card-title">Plásticos Biodegradáveis: a Solução para Embalagens Sustentáveis</h3>
+          <p class="blog-card-excerpt">Conheça as alternativas biodegradáveis e compostáveis que estão transformando o mercado de embalagens plásticas no Brasil e no mundo.</p>
+          <span class="blog-card-link">Ler artigo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="https://www.plastibras.com.br/sustentabilidade-industria-plastico/" target="_blank" rel="noopener" class="blog-card reveal" data-delay="1" data-cat="sustentabilidade">
+        <div class="blog-card-img" style="background:var(--bg-2)"><div class="blog-card-img-placeholder"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(0,180,216,0.3)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div></div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta"><span class="blog-card-cat" style="background:rgba(255,90,31,0.1);color:var(--accent-orange);border:1px solid rgba(255,90,31,0.2)">Sustentabilidade</span><span class="blog-card-date">15/09/2024</span></div>
+          <h3 class="blog-card-title">Sustentabilidade na Indústria do Plástico: Transformando o Futuro</h3>
+          <p class="blog-card-excerpt">Como as práticas sustentáveis estão transformando a indústria plástica e criando novas oportunidades para empresas que se adaptam.</p>
+          <span class="blog-card-link">Ler artigo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="https://www.plastibras.com.br/como-escolher-melhor-empresa-injecao-plasticos-projeto/" target="_blank" rel="noopener" class="blog-card reveal" data-delay="2" data-cat="mercado">
+        <div class="blog-card-img"><img src="images/parque-de-maquinas-plastibras-industria-plastica-joinville-sc.jpg" alt="" loading="lazy"></div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta"><span class="blog-card-cat">Mercado</span><span class="blog-card-date">10/04/2024</span></div>
+          <h3 class="blog-card-title">Como Escolher a Melhor Empresa de Injeção de Plásticos Para Seu Projeto</h3>
+          <p class="blog-card-excerpt">Os critérios essenciais que você deve avaliar antes de contratar um fornecedor de injeção plástica: qualidade, capacidade, certificações e prazo.</p>
+          <span class="blog-card-link">Ler artigo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="https://www.plastibras.com.br/injecao-de-plasticos-versatilidade-diversos-setores/" target="_blank" rel="noopener" class="blog-card reveal" data-delay="3" data-cat="mercado">
+        <div class="blog-card-img"><img src="images/injecao_plasticos_plastibras-1-300x231.jpg" alt="" loading="lazy"></div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta"><span class="blog-card-cat">Mercado</span><span class="blog-card-date">09/02/2024</span></div>
+          <h3 class="blog-card-title">Injeção de Plásticos: Versatilidade para Diversos Setores</h3>
+          <p class="blog-card-excerpt">A injeção plástica está presente em praticamente todos os setores da indústria. Descubra como cada segmento utiliza esta tecnologia.</p>
+          <span class="blog-card-link">Ler artigo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="https://www.plastibras.com.br/embalagem-blister-protecao-ideal-para-brinquedos/" target="_blank" rel="noopener" class="blog-card reveal" data-delay="1" data-cat="mercado">
+        <div class="blog-card-img"><img src="images/peca-plastica-embalagem-blister-vacuum-forming-termoformagem-a-vacuo.jpg" alt="" loading="lazy"></div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta"><span class="blog-card-cat">Mercado</span><span class="blog-card-date">03/08/2023</span></div>
+          <h3 class="blog-card-title">Embalagem Blister: a Proteção Ideal para Brinquedos</h3>
+          <p class="blog-card-excerpt">A embalagem blister protege e valoriza brinquedos no ponto de venda, combinando transparência, segurança e apelo visual para maximizar as vendas.</p>
+          <span class="blog-card-link">Ler artigo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="https://www.plastibras.com.br/beneficios-injecao-plastica-industria/" target="_blank" rel="noopener" class="blog-card reveal" data-delay="2" data-cat="tecnico">
+        <div class="blog-card-img"><img src="images/controle-dimensional-de-pecas-de-plastico-industria-plastica.jpg" alt="" loading="lazy"></div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta"><span class="blog-card-cat">Técnico</span><span class="blog-card-date">24/08/2023</span></div>
+          <h3 class="blog-card-title">Os Benefícios da Injeção Plástica na Indústria</h3>
+          <p class="blog-card-excerpt">Quais são as vantagens concretas que a injeção plástica traz para a indústria? Precisão, velocidade, custo e flexibilidade detalhados neste artigo.</p>
+          <span class="blog-card-link">Ler artigo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="https://www.plastibras.com.br/vacuum-forming-como-funciona-processo-termoformagem-pecas/" target="_blank" rel="noopener" class="blog-card reveal" data-delay="3" data-cat="tecnico">
+        <div class="blog-card-img"><img src="images/termoformagem-joinville-curitiba-sao-paulo-santa-catarina-parana.jpg" alt="" loading="lazy"></div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta"><span class="blog-card-cat">Técnico</span><span class="blog-card-date">11/10/2022</span></div>
+          <h3 class="blog-card-title">Vacuum Forming: Como Funciona o Processo de Termoformagem</h3>
+          <p class="blog-card-excerpt">Entenda o processo de termoformagem a vácuo do início ao fim: aquecimento, conformação, resfriamento, corte e aplicações industriais.</p>
+          <span class="blog-card-link">Ler artigo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="https://www.plastibras.com.br/injecao-de-plasticos-como-funciona-processo-injecao-plastica/" target="_blank" rel="noopener" class="blog-card reveal" data-delay="1" data-cat="tecnico">
+        <div class="blog-card-img"><img src="images/fabrica-de-produtos-de-plastico-injecao-termoformagem.jpg" alt="" loading="lazy"></div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta"><span class="blog-card-cat">Técnico</span><span class="blog-card-date">28/10/2022</span></div>
+          <h3 class="blog-card-title">Injeção de Plásticos: Como Funciona o Processo</h3>
+          <p class="blog-card-excerpt">O guia completo sobre o processo de injeção plástica: desde a matéria-prima até a peça acabada. Entenda cada etapa com clareza técnica.</p>
+          <span class="blog-card-link">Ler artigo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="https://www.plastibras.com.br/o-que-sao-termoplasticos-e-quais-os-tipos-existentes/" target="_blank" rel="noopener" class="blog-card reveal" data-delay="2" data-cat="tecnico">
+        <div class="blog-card-img" style="background:var(--bg-2)"><div class="blog-card-img-placeholder"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(0,180,216,0.3)" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div></div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta"><span class="blog-card-cat">Técnico</span><span class="blog-card-date">19/10/2022</span></div>
+          <h3 class="blog-card-title">O Que São Termoplásticos e Quais os Tipos Existentes?</h3>
+          <p class="blog-card-excerpt">PP, PE, PVC, ABS, PA... entenda as diferenças entre os principais termoplásticos, suas características e para quais aplicações cada um é mais adequado.</p>
+          <span class="blog-card-link">Ler artigo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a href="https://www.plastibras.com.br/desvendando-os-mitos-a-verdade-sobre-os-plasticos-e-sua-sustentabilidade/" target="_blank" rel="noopener" class="blog-card reveal" data-delay="3" data-cat="sustentabilidade">
+        <div class="blog-card-img" style="background:var(--bg-2)"><div class="blog-card-img-placeholder"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,90,31,0.3)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div></div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta"><span class="blog-card-cat" style="background:rgba(255,90,31,0.1);color:var(--accent-orange);border:1px solid rgba(255,90,31,0.2)">Sustentabilidade</span><span class="blog-card-date">23/07/2024</span></div>
+          <h3 class="blog-card-title">Desvendando os Mitos: A Verdade Sobre os Plásticos e Sua Sustentabilidade</h3>
+          <p class="blog-card-excerpt">Muitas crenças sobre o impacto ambiental dos plásticos não resistem à análise técnica. Descubra o que é mito e o que é fato sobre os plásticos e o meio ambiente.</p>
+          <span class="blog-card-link">Ler artigo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </div>
+      </a>
+    </div>
+
+    <div style="text-align:center;margin-top:48px" class="reveal">
+      <a href="https://www.plastibras.com.br/blog/" target="_blank" rel="noopener" class="btn btn-outline btn-lg">
+        Ver todos os artigos no site original →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER CTA -->
+<section class="section cta-section bg-1">
+  <div class="cta-bg"><div class="cta-bg-gradient"></div></div>
+  <div class="container">
+    <div class="cta-inner reveal" style="text-align:center">
+      <div class="section-tag" style="justify-content:center">Fique por Dentro</div>
+      <h2 class="cta-title">Precisa de uma <span class="highlight">solução plástica?</span></h2>
+      <p class="cta-desc">Fale com nossa equipe técnica e receba orientação especializada para seu projeto de injeção, vacuum forming ou ferramentaria.</p>
+      <div class="cta-actions">
+        <a href="contato.html" class="btn btn-primary btn-lg">Fale Conosco <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        <a href="https://wa.me/5547997690917" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg> WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+<style>
+  .blog-featured-card:hover { border-color: rgba(0,180,216,0.25); box-shadow: 0 16px 48px rgba(0,0,0,0.4); transform: translateY(-2px); }
+  .blog-featured-card:hover img { transform: scale(1.04); }
+  .blog-featured-card img { transition: transform 0.5s ease; }
+  @media(max-width:800px) { .blog-featured-card { grid-template-columns: 1fr !important; } }
+</style>
+</body>
+</html>
